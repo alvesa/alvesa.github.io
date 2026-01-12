@@ -1,0 +1,24 @@
+<section class="section">
+    <div class="container">
+        <div class="edu-grid">
+            <div class="edu-column">
+                <h2 class="section-title">Education</h2>
+                <div class="card" *ngFor="let edu of education">
+                    <h3>{{ edu.degree }}</h3>
+                    <p class="institution">{{ edu.institution }}</p>
+                    <p class="year">{{ edu.year }}</p>
+                </div>
+            </div>
+
+            <div class="edu-column">
+                <h2 class="section-title">Certifications</h2>
+                <div class="card" *ngFor="let cert of certifications">
+                    <h3>{{ cert.name }}</h3>
+                    <p class="institution">{{ cert.institution }}</p>
+                    <p class="id" *ngIf="cert.id">ID: {{ cert.id }}</p>
+                    <p class="year">{{ cert.year }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

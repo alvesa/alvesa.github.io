@@ -1,0 +1,41 @@
+.edu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    h3 {
+        margin-bottom: 10px;
+        color: var(--text-primary);
+    }
+
+    .institution {
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+    .year {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+    .id {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        font-family: monospace;
+    }
+}
+
+@media (max-width: 768px) {
+    .edu-grid {
+        grid-template-columns: 1fr;
+    }
+}

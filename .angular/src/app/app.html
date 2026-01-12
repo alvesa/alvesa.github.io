@@ -1,0 +1,33 @@
+<div class="main-layout" *ngIf="cvData">
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        {{ title }}
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <app-hero [data]="cvData.basics" id="about"></app-hero>
+    <app-skills [data]="cvData.skills" id="skills"></app-skills>
+    <app-experience [experience]="cvData.experience" id="experience"></app-experience>
+    <app-education [education]="cvData.education" [certifications]="cvData.certifications"></app-education>
+    <app-contact [basics]="cvData.basics" id="contact"></app-contact>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; {{ currentYear }} {{ cvData.basics.name }}. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+<div class="loading" *ngIf="!cvData">
+  <div class="spinner"></div>
+</div>

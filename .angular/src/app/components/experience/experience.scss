@@ -1,0 +1,124 @@
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 30px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color), transparent);
+    }
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -36px;
+    top: 0; // Align with top of content
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    z-index: 10;
+}
+
+.timeline-content {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 30px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+
+    &:hover {
+        border-color: rgba(129, 140, 248, 0.3);
+    }
+}
+
+.job-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.role {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.company {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.period {
+    margin-left: auto;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 4px 10px;
+    border-radius: 15px;
+}
+
+.location {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.responsibilities {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: var(--text-primary);
+
+    li {
+        margin-bottom: 8px;
+
+        &::marker {
+            color: var(--secondary-color);
+        }
+    }
+}
+
+.achievement {
+    border-left: 3px solid var(--accent-color);
+    padding-left: 15px;
+    font-style: italic;
+    color: var(--text-secondary);
+
+    strong {
+        color: var(--accent-color);
+        font-style: normal;
+    }
+}
+
+@media (max-width: 600px) {
+    .job-header {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .period {
+        margin-left: 0;
+    }
+}
