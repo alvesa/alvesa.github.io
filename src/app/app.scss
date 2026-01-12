@@ -4,7 +4,8 @@
     left: 0;
     width: 100%;
     padding: 20px 0;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(255, 255, 255, 0.8);
+    /* Light glass */
     backdrop-filter: blur(var(--glass-blur));
     z-index: 1000;
     border-bottom: 1px solid var(--card-border);
@@ -75,6 +76,6 @@
 
 @media (max-width: 768px) {
     .nav {
-        display: none; // For simplicity in MVP, could add hamburger
+        display: none; // MVP
     }
 }
