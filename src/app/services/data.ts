@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { shareReplay } from 'rxjs/operators';
 
 export interface CvData {
   basics: {
@@ -45,11 +46,17 @@ export interface CvData {
   providedIn: 'root'
 })
 export class DataService {
+  data$: Observable<CvData> | null = null;
   private dataUrl = 'cv-data.json';
 
   constructor(private http: HttpClient) { }
 
   getData(): Observable<CvData> {
-    return this.http.get<CvData>(this.dataUrl);
+    if (!this.data$) {
+      this.data$ = this.http.get<CvData>(this.dataUrl).pipe(
+        shareReplay(1)
+      );
+    }
+    return this.data$;
   }
 }

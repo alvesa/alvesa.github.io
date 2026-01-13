@@ -1,22 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 import { DataService, CvData } from './services/data';
-import { HeroComponent } from './components/hero/hero';
-import { SkillsComponent } from './components/skills/skills';
-import { ExperienceComponent } from './components/experience/experience';
-import { EducationComponent } from './components/education/education';
-import { ContactComponent } from './components/contact/contact';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     CommonModule,
-    HeroComponent,
-    SkillsComponent,
-    ExperienceComponent,
-    EducationComponent,
-    ContactComponent
+    RouterOutlet
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
