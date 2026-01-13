@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "portfolio-new": {
+    "alvesa.github.io": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "portfolio-new:build:production"
+              "buildTarget": "alvesa.github.io:build:production"
             },
             "development": {
-              "buildTarget": "portfolio-new:build:development"
+              "buildTarget": "alvesa.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
