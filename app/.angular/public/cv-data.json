@@ -1,0 +1,151 @@
+{
+  "basics": {
+    "name": "André Euclides Alves",
+    "email": "andresistinfo@gmail.com",
+    "phone": "+351 912 386 565",
+    "location": {
+      "city": "Porto",
+      "country": "Portugal"
+    },
+    "languages": ["Portuguese (Native)", "English (Fluent)"]
+  },
+  "skills": {
+    "tech": ["HTML5", "CSS3", "JS/TS", "ReactJS", "Angular", "REST", "NodeJs"],
+    "tools": ["Git", "TFS", "SQL (MS SqlServer, MySql, Postgress, Oracle)", "Redis", "Docker"],
+    "languages": ["C# (.Net Framework, NetCore)", "VB.NET", "Asp classic", "JS/TS"],
+    "integration": ["SAP", "CommerceTools", "Salesforce", "ERP Microsiga", "PowerBI"],
+    "other": ["Intermediate knowledge: NodeJs"]
+  },
+  "education": [
+    {
+      "institution": "Universidade Paulista",
+      "degree": "Bachelor’s degree in Information Systems",
+      "year": "2011 – 2015"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "MTA: Software Development Fundamentals",
+      "institution": "Microsoft Certification",
+      "year": "2015",
+      "id": "12379149"
+    }
+  ],
+  "experience": [
+    {
+      "role": "C# Developer",
+      "company": "Nearshore Portugal",
+      "location": "Porto, Portugal",
+      "period": "May – 2022 – Present",
+      "responsibilities": [
+        "Using C# on backend, integration with CommerceTools",
+        "Using NetCore to create and webapi, functionapps, etc",
+        "Managing resources in Azure and CI/CD on Azure DevOps using bicep files",
+        "Using NUnit and XUnit to unit tests",
+        "Using code quality measures integration (NexusIQ, SonarQube)",
+        "Using CQRS design with Mediatr",
+        "Using ReactJS on frontend configuration platform"
+      ],
+      "achievements": "Responsible for creation of new features and integration offer service engine built in C# dotnet core 6 and frontend in ReactJS."
+    },
+    {
+      "role": "Software Developer",
+      "company": "Ytech",
+      "location": "Lisboa, Portugal",
+      "period": "Feb – 2021 – Jun - 2022",
+      "responsibilities": [
+        "Maintained application built in .NET WCF and WPF",
+        "Managed pipelines in azure devops",
+        "Managed Azure resources and maintained functions app",
+        "Maintained database Oracle managed PL-SQL"
+      ],
+      "achievements": "Responsible for pipelines execution in Azure Devops, configuration of Azure Cloud resources, fixing some bugs in service WCF and WPF on UI."
+    },
+    {
+      "role": "Fullstack Engineer",
+      "company": "Evt",
+      "location": "São Paulo, Brazil",
+      "period": "Jan – 2021 – Sep - 2021",
+      "responsibilities": [
+        "Used C# on backend, integration with SAP via webapi",
+        "Used NetCore 5 to create and maintain microservices",
+        "Managed resources in Azure and CI/CD on GitLab/Azure DevOps",
+        "Used React on frontend using nextjs",
+        "Used Docker and sk8 to manage the microservices",
+        "Stored the data in MongoDB"
+      ],
+      "achievements": "Responsible for development of integration with credicard, debit card, cashback, etc. Payments and financial integration via SAP using C# webapi."
+    },
+    {
+        "role": "Fullstack Engineer",
+        "company": "Grupo JCA",
+        "location": "São Paulo, Brazil",
+        "period": "Jan – 2019 – Jan - 2021",
+        "responsibilities": [
+            "Used C# on backend with architecture DDD",
+            "Developed NetCore 5 webapi in microservices architecture",
+            "Developed C# services multi thread application to manage parallel requests",
+            "Used Oracle and Postgress as database",
+            "Used Docker and sk8 to manage the microservices",
+            "Used Angular 6+ on frontend",
+            "Used CQRS to support the architecture",
+            "Used Redis to validate authorization"
+        ],
+        "achievements": "Refactoring of old Java platform in C# with Angular for a book busses travels and track the bus information via api to show in mobile application."
+    },
+    {
+        "role": "Fullstack Developer",
+        "company": "Spotpromo Marketing",
+        "location": "São Paulo, Brazil",
+        "period": "Jan – 2017 – Jan - 2019",
+        "responsibilities": [
+            "Used C# (integration PowerBI), PHP and NodeJS",
+            "Developed application in (MVC, WebForms) with C#",
+            "Used Jquery, AngularJS and ReactJS on frontend",
+            "Used MongoDB and MS SqlServer (T-SQL) to database"
+        ],
+        "achievements": "Responsible for integration via C# to show embedded information from Power BI and exports of all information via async NodeJS service."
+    },
+    {
+        "role": "Software Developer",
+        "company": "Liberty Insurances",
+        "location": "São Paulo, Brazil",
+        "period": "May – 2016 – May - 2017",
+        "responsibilities": [
+            "Integrated via webservices with Salesforce",
+            "Maintained and migrated asp classic application to C# MVC",
+            "Maintained WebForms application with VB.NET",
+            "Used Atlassian platform (Jira, Bamboo, etc) to manage CI/CD",
+            "Used Oracle as database (PL-SQL)"
+        ],
+        "achievements": "Responsible for automated the risk system engine via web api with C# Crivo that makes the analyses for fraud validation."
+    },
+    {
+        "role": "Fullstack Developer",
+        "company": "Informa Exhibitions Brazil",
+        "location": "São Paulo, Brazil",
+        "period": "May – 2014 – May - 2016",
+        "responsibilities": [
+            "Maintained asp classic application",
+            "Developed integration using webservices with C# to ERP (Microsiga)",
+            "Created new application and addition of new features in webservices with C#",
+            "Created new application frontend in AngularJS",
+            "Used JS (vanilla), Jquery on frontend"
+        ],
+        "achievements": "Responsible for refactoring of old asp classic to C# dotnet and AngularJS"
+    },
+    {
+        "role": "Fullstack Developer Jr",
+        "company": "Hospital das Clinicas",
+        "location": "São Paulo, Brazil",
+        "period": "Aug – 2013 – May - 2014",
+        "responsibilities": [
+            "Created reports using Cristal Reports and MV Reports",
+            "Used Oracle to create and update some PL-SQL",
+            "Used LowCode in main application",
+            "Developed JS/PHP front/back application"
+        ],
+        "achievements": "Responsible for reports creation on Oracle, development of Hospital ER low code module for apply the queue protocol"
+    }
+  ]
+}
