@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { DataService, CvData } from './services/data';
 
 @Component({
@@ -8,7 +8,8 @@ import { DataService, CvData } from './services/data';
   standalone: true,
   imports: [
     CommonModule,
-    RouterOutlet
+    RouterOutlet,
+    RouterLink
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
@@ -16,7 +17,7 @@ import { DataService, CvData } from './services/data';
 export class AppComponent implements OnInit {
   cvData: CvData | null = null;
   currentYear = new Date().getFullYear();
-  title = '<AA.>';
+  title = '< AA >';
 
   constructor(private dataService: DataService) { }
 
