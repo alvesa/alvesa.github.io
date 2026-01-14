@@ -11,5 +11,6 @@ export const routes: Routes = [
         children: [
             { path: 'jwt-copy/privacy-policy', component: JwtCopyPrivacyPolicyComponent }
         ]
-    }
+    },
+    { path: '**', redirectTo: '' }
 ];
