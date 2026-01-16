@@ -21,7 +21,6 @@ The Extension requires specific permissions solely to perform its core function:
 
 - **`activeTab`**: To scan the current page for tokens when you click the icon.
 - **`cookies`**: To detect tokens stored in authentication cookies.
-- **`scripting`**: To inject a script that safely reads storage for tokens.
 - **`webRequest`**: To detect tokens in network headers.
 - **`clipboardWrite`**: To allow you to copy tokens to your clipboard.
 

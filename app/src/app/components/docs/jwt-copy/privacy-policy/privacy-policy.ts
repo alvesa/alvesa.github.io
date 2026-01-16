@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-jwt-copy-privacy-policy',
-    standalone: true,
-    template: `
+  selector: 'app-jwt-copy-privacy-policy',
+  standalone: true,
+  template: `
     <article class="privacy-policy">
       <h1>Privacy Policy for JWT Copy</h1>
       <p><strong>Last Updated:</strong> January 13, 2026</p>
@@ -32,7 +32,6 @@ import { Component } from '@angular/core';
         <ul>
           <li><strong><code>activeTab</code></strong>: To scan the current page for tokens when you click the icon.</li>
           <li><strong><code>cookies</code></strong>: To detect tokens stored in authentication cookies.</li>
-          <li><strong><code>scripting</code></strong>: To inject a script that safely reads storage for tokens.</li>
           <li><strong><code>webRequest</code></strong>: To detect tokens in network headers.</li>
           <li><strong><code>clipboardWrite</code></strong>: To allow you to copy tokens to your clipboard.</li>
         </ul>
@@ -54,7 +53,7 @@ import { Component } from '@angular/core';
       </section>
     </article>
   `,
-    styles: [`
+  styles: [`
     .privacy-policy {
       max-width: 800px;
       margin: 0 auto;
