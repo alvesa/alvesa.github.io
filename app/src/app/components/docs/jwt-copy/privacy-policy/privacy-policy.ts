@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
         <h2>2. Local Data Usage</h2>
         <p>The Extension functions by scanning the active tab and its local storage to find JSON Web Tokens (JWTs). This process happens exclusively within your browser:</p>
         <ul>
-          <li><strong>JWT Scanning:</strong> The Extension reads <code>localStorage</code>, <code>sessionStorage</code>, cookies, and network request headers (<code>Authorization: Bearer</code>) from the active tab.</li>
+          <li><strong>JWT Scanning:</strong> The Extension reads <code>localStorage</code>, <code>sessionStorage</code> and network request headers (<code>Authorization: Bearer</code>) from the active tab.</li>
           <li><strong>In-Memory Processing:</strong> Tokens are identified and displayed in the Extension's popup window. They are temporarily held in your browser's memory while the Extension is open.</li>
           <li><strong>Copy Functionality:</strong> If you choose to copy a token, it is written to your system clipboard.</li>
         </ul>
@@ -31,7 +31,6 @@ import { Component } from '@angular/core';
         <p>The Extension requires specific permissions solely to perform its core function:</p>
         <ul>
           <li><strong><code>activeTab</code></strong>: To scan the current page for tokens when you click the icon.</li>
-          <li><strong><code>cookies</code></strong>: To detect tokens stored in authentication cookies.</li>
           <li><strong><code>webRequest</code></strong>: To detect tokens in network headers.</li>
           <li><strong><code>clipboardWrite</code></strong>: To allow you to copy tokens to your clipboard.</li>
         </ul>
